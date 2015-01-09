@@ -559,7 +559,13 @@ body {
   font-family: "News Cycle", Impact, sans-serif;
 }
 
-
+.section .reveal .state-background {
+    background: yellow;}
+.section .reveal h1,
+.section .reveal p {
+    color: black;
+    position: relative;
+    top: 4%;}
 
   </style>
   
@@ -783,7 +789,7 @@ hljs.initHighlightingOnLoad();
   <div class="reveal">
   <div class="slides">
 
-<section data-state="section" data-transition="default" data-transition-speed="default">
+<section data-state="section" data-transition="default" data-transition-speed="slow">
 <h1>Autocuradoria</h1><p>Breno Xavier</p>
 
 <div class="slideContent noTitle" >
@@ -791,20 +797,21 @@ hljs.initHighlightingOnLoad();
 </div>
 
 </section>
-<section data-transition="default" data-transition-speed="default">
+<section data-transition="default" data-transition-speed="slow">
 <h3>Autocuradoria</h3>
 <div class="slideContent" >
-<p>Exemplo de texto e muitas coisinhas incríveis</p>
+<p>Exemplo de texto e muitas coisinhas tipo as duas primeiras frases do seu documento.
+<del>Aliais, cade o documento&hellip; hum!</del></p>
 
 </div>
 
 </section>
-<section data-transition="default" data-transition-speed="default">
+<section data-transition="default" data-transition-speed="slow">
 <h3>Evento</h3>
 <div class="slideContent" >
 <blockquote>
 <ol>
-<li>Bullet 1</li>
+<li><a href="www.link.com">exmplo_link</a></li>
 <li>Bullet 1</li>
 <li>Bullet 1</li>
 </ol>
@@ -813,16 +820,24 @@ hljs.initHighlightingOnLoad();
 </div>
 
 </section>
-<section data-transition="default" data-transition-speed="default">
-<h3>Page3</h3>
+<section data-state="section" data-transition="default" data-transition-speed="slow">
+<h2>Page 3</h2>
 <div class="slideContent" >
 
 </div>
 
 </section>
-<section data-transition="default" data-transition-speed="default">
-<h3>Page4</h3>
+<section data-state="prompt" data-transition="default" data-transition-speed="slow">
+<h3>Page 4</h3>
 <div class="slideContent" >
+
+</div>
+
+</section>
+<section data-transition="default" data-transition-speed="slow">
+<h3>Page 5</h3>
+<div class="slideContent" >
+<p>pode mudar a fonte</p>
 
 </div>
 
@@ -879,7 +894,7 @@ function commandsForSlide(indexh) {
       
       theme: 'simple', 
       transition: 'default',
-      transitionSpeed: 'default',
+      transitionSpeed: 'slow',
       rtl: false,
       width: 960,
       height: 700,
